@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حسابي — 3ALM ELSHABAB</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/stadium-page.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/ltr.css">
+</head>
+<body data-page="profile" data-auth="user">
+<main>
+<div class="page-wrap mid">
+  <p class="section-label">Account</p><h1 class="section-title" style="font-size:2rem;margin-bottom:20px;">حسابي</h1>
+  <div class="panel"><h2>البيانات الشخصية</h2>
+    <form id="profileForm" class="form-grid" novalidate>
+      <div class="form-group"><label for="pname">الاسم</label><input id="pname" name="name"></div>
+      <div class="form-group"><label for="pphone">رقم الموبايل</label><input id="pphone" name="phone" dir="ltr"></div>
+      <div class="form-group full"><label for="pmail">البريد الإلكتروني</label><input id="pmail" disabled dir="ltr"></div>
+      <div class="full"><button class="btn-primary" type="submit">حفظ التغييرات</button></div>
+    </form></div>
+  <div class="panel"><h2>تغيير كلمة المرور</h2>
+    <form id="pwForm" class="form-grid" novalidate>
+      <div class="form-group full"><label for="oldpw">كلمة المرور الحالية</label><input id="oldpw" name="old" type="password" dir="ltr" autocomplete="current-password"></div>
+      <div class="form-group"><label for="newpw">كلمة المرور الجديدة</label><input id="newpw" name="password" type="password" dir="ltr" autocomplete="new-password"></div>
+      <div class="form-group"><label for="newpw2">تأكيد الجديدة</label><input id="newpw2" name="confirm" type="password" dir="ltr" autocomplete="new-password"></div>
+      <div class="full"><button class="btn-primary" type="submit">تحديث كلمة المرور</button></div>
+    </form></div>
+  <div class="panel"><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;"><span id="profileStats" class="hint"></span><button class="btn-danger" id="logoutBtn" type="button">تسجيل الخروج</button></div></div>
+</div></main>
+<footer>
+  <span class="footer-brand">⚽ 3ALM ELSHABAB</span>
+  <span>© 2026 — All Rights Reserved</span>
+  <span>support@3almelshabab.com</span>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/store.js"></script>
+<script src="js/validators.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

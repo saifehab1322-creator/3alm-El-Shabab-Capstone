@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حجوزاتي — 3ALM ELSHABAB</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/stadium-page.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/ltr.css">
+</head>
+<body data-page="my-booking" data-auth="user">
+<main>
+<div class="page-wrap">
+  <p class="section-label">My Bookings</p>
+  <div class="bookings-header" style="padding-top:0"><h1 class="section-title" style="font-size:2rem;">حجوزاتي</h1><span id="countBadge"></span></div>
+  <div class="tabs" id="tabs"><button class="filter-tab active-tab" data-t="all">الكل</button><button class="filter-tab" data-t="upcoming">القادمة</button><button class="filter-tab" data-t="past">السابقة</button><button class="filter-tab" data-t="cancelled">الملغية</button></div>
+  <div id="list"></div>
+</div>
+<div class="modal-overlay" id="cancelModal"><div class="modal" role="dialog" aria-modal="true"><h3>إلغاء الحجز؟</h3><p class="hint" id="cancelText"></p>
+  <div class="modal-actions"><button class="btn-cancel" id="cancelNo" type="button">تراجع</button><button class="btn-confirm" id="cancelYes" type="button">نعم، ألغِ الحجز</button></div></div></div></main>
+<footer>
+  <span class="footer-brand">⚽ 3ALM ELSHABAB</span>
+  <span>© 2026 — All Rights Reserved</span>
+  <span>support@3almelshabab.com</span>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/store.js"></script>
+<script src="js/validators.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/my-booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة التحكم — 3ALM ELSHABAB</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/stadium-page.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/ltr.css">
+</head>
+<body data-page="admin" data-auth="admin">
+<main>
+<div class="page-wrap">
+  <p class="section-label">Admin</p><h1 class="section-title" style="font-size:2rem;margin-bottom:6px;">لوحة التحكم</h1>
+  <p class="hint" style="margin-bottom:18px;">كل الأرقام محسوبة من بيانات قاعدة البيانات الفعلية.</p>
+  <nav class="admin-nav" aria-label="أقسام لوحة التحكم">
+    <a class="filter-tab" href="#sec-overview">نظرة عامة</a><a class="filter-tab" href="#sec-codes">أكواد أصحاب الملاعب</a><a class="filter-tab" href="#sec-owners">أصحاب الملاعب</a><a class="filter-tab" href="#sec-bookings">الحجوزات</a>
+    <a class="filter-tab" href="#sec-stadiums">الملاعب</a><a class="filter-tab" href="#sec-users">المستخدمون</a><a class="filter-tab" href="#sec-messages">الرسائل</a></nav>
+  <section class="admin-section" id="sec-overview"><div class="admin-grid" id="kpis"></div></section>
+  <section class="admin-section" id="sec-codes"><h2><i class="fa-solid fa-key"></i> أكواد أصحاب الملاعب</h2>
+    <div class="panel"><h3>إنشاء كود تفعيل جديد</h3>
+      <form id="codeForm" class="form-grid" novalidate>
+        <div class="form-group"><label for="clabel">اسم صاحب الملعب / ملاحظة التحقق</label><input id="clabel" name="label" placeholder="مثال: أحمد علي — تم التحقق هاتفيًا"></div>
+        <div class="form-group"><label for="cdays">مدة الصلاحية (بالأيام)</label><input id="cdays" name="days" type="number" min="1" max="90" value="7"></div>
+        <div class="full"><button class="btn-primary" type="submit">إنشاء كود جديد</button></div>
+      </form><div id="newCode"></div></div>
+    <div class="panel"><h3>أكواد لم تُستخدم بعد</h3><div class="table-wrap" id="codesActive"></div></div>
+    <div class="panel"><h3>أكواد مستخدمة</h3><div class="table-wrap" id="codesUsed"></div></div>
+    <div class="panel"><h3>أكواد ملغاة أو منتهية</h3><div class="table-wrap" id="codesDead"></div></div></section>
+  <section class="admin-section" id="sec-owners"><h2><i class="fa-solid fa-store"></i> أصحاب الملاعب المسجلون</h2><div class="panel"><div class="table-wrap" id="adminOwners"></div></div></section>
+  <section class="admin-section" id="sec-bookings"><h2><i class="fa-solid fa-calendar-days"></i> الحجوزات</h2><div class="panel"><div class="table-wrap" id="adminBookings"></div></div></section>
+  <section class="admin-section" id="sec-stadiums"><h2><i class="fa-solid fa-futbol"></i> الملاعب</h2><div class="panel"><div class="table-wrap" id="adminStadiums"></div></div><div class="panel" id="adminEdit" hidden></div></section>
+  <section class="admin-section" id="sec-users"><h2><i class="fa-solid fa-users"></i> المستخدمون</h2><div class="panel"><div class="table-wrap" id="adminUsers"></div></div></section>
+  <section class="admin-section" id="sec-messages"><h2><i class="fa-regular fa-envelope"></i> رسائل التواصل</h2><div class="panel" id="adminMessages"></div></section>
+</div></main>
+<footer>
+  <span class="footer-brand">⚽ 3ALM ELSHABAB</span>
+  <span>© 2026 — All Rights Reserved</span>
+  <span>support@3almelshabab.com</span>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/store.js"></script>
+<script src="js/validators.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

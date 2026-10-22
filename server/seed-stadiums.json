@@ -1,0 +1,137 @@
+[
+  {
+    "id": "a",
+    "name": "Stadium A — Elite",
+    "location": "Sohag, Gamal Abdel Nasser St.",
+    "locationAr": "سوهاج، شارع جمال عبد الناصر",
+    "type": "11",
+    "typeLabel": "Stadium 11",
+    "players": 22,
+    "price": 100,
+    "rating": 4.9,
+    "features": [
+      "Floodlights",
+      "Parking",
+      "Showers"
+    ],
+    "image": "images/stadium-a.jpg",
+    "bookable": true,
+    "open": 8,
+    "close": 24,
+    "surface": "عشب صناعي",
+    "size": "100 × 60 م",
+    "desc": "ملعب 11 لاعب بإضاءة كاملة وموقف سيارات وغرف استحمام."
+  },
+  {
+    "id": "b",
+    "name": "Stadium B — 5-a-Side",
+    "location": "Sohag, Gomhoria St.",
+    "locationAr": "سوهاج، شارع الجمهورية",
+    "type": "5",
+    "typeLabel": "5-a-Side",
+    "players": 10,
+    "price": 150,
+    "rating": 4.7,
+    "features": [
+      "Floodlights",
+      "Café"
+    ],
+    "image": "images/stadium-b.jpg",
+    "bookable": true,
+    "open": 8,
+    "close": 24,
+    "surface": "عشب صناعي",
+    "size": "40 × 20 م",
+    "desc": "ملعب خماسي مضاء مع كافيه بجانب الملعب."
+  },
+  {
+    "id": "c",
+    "name": "Stadium C — Premium",
+    "location": "Sohag, City Center",
+    "locationAr": "سوهاج، وسط المدينة",
+    "type": "11",
+    "typeLabel": "Stadium 11",
+    "players": 22,
+    "price": 200,
+    "rating": 5,
+    "features": [
+      "Floodlights",
+      "Parking",
+      "VIP Lounge"
+    ],
+    "image": "images/stadium-c.jpg",
+    "bookable": true,
+    "open": 10,
+    "close": 24,
+    "surface": "عشب صناعي ممتاز",
+    "size": "105 × 68 م",
+    "desc": "ملعب مميز في وسط المدينة مع صالة VIP وموقف سيارات."
+  },
+  {
+    "id": "d",
+    "name": "Stadium D — Indoor",
+    "location": "Sohag, Sports Complex",
+    "locationAr": "سوهاج، المجمع الرياضي",
+    "type": "indoor",
+    "typeLabel": "Indoor",
+    "players": 10,
+    "price": 250,
+    "rating": 4.5,
+    "features": [
+      "Air Conditioning",
+      "Café"
+    ],
+    "image": "images/stadium-d.jpg",
+    "bookable": true,
+    "open": 10,
+    "close": 24,
+    "surface": "أرضية مغلقة",
+    "size": "42 × 22 م",
+    "desc": "ملعب مغطى ومكيّف داخل مجمع رياضي، مناسب لكل الفصول."
+  },
+  {
+    "id": "night",
+    "name": "Night Arena",
+    "location": "Sohag, North District",
+    "locationAr": "سوهاج، الحي الشمالي",
+    "type": "7",
+    "typeLabel": "7-a-Side",
+    "players": 14,
+    "price": 120,
+    "rating": 4.6,
+    "features": [
+      "Floodlights",
+      "Night Rates"
+    ],
+    "image": "images/night-arena.jpg",
+    "bookable": true,
+    "open": 16,
+    "close": 24,
+    "surface": "عشب صناعي",
+    "size": "60 × 40 م",
+    "desc": "ملعب سباعي بأسعار مخفضة لمباريات المساء."
+  },
+  {
+    "id": "sf90",
+    "name": "Special Force 90",
+    "location": "Sohag, Station St.",
+    "locationAr": "سوهاج، شارع المحطة",
+    "type": "11",
+    "typeLabel": "Stadium 11",
+    "players": 22,
+    "price": 180,
+    "rating": 4.8,
+    "features": [
+      "Turf Grass",
+      "Parking",
+      "Showers"
+    ],
+    "image": "images/special-force-90.jpg",
+    "bookable": false,
+    "open": 8,
+    "close": 24,
+    "surface": "عشب طبيعي",
+    "size": "100 × 62 م",
+    "desc": "ملعب 11 لاعب بعشب طبيعي. محجوز بالكامل حاليًا."
+  }
+]

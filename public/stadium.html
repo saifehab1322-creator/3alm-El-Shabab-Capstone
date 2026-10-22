@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الملاعب — 3ALM ELSHABAB</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/stadium-page.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/ltr.css">
+</head>
+<body data-page="stadium">
+<main>
+<div class="page-hero"><div><p class="section-label">Browse All</p><h1>اختر <em>ملعبك</em></h1></div>
+  <p style="color:var(--text-muted);max-width:320px;font-size:.9rem;">أفضل الملاعب المتاحة للحجز — قارن الأسعار واحجز مباشرة.</p></div>
+<div class="page-search"><form class="search-card" id="stSearch" role="search" novalidate>
+      <label class="search-field"><i class="fa-solid fa-magnifying-glass"></i><input type="search" name="q" id="stSearchQ" placeholder="ابحث باسم الملعب أو الموقع (مثال: سوهاج)" aria-label="بحث عن ملعب"></label>
+      <label class="search-field" style="max-width:170px"><i class="fa-solid fa-futbol"></i><select name="type" aria-label="نوع الملعب">
+        <option value="all">كل الأنواع</option><option value="11">Stadium 11</option><option value="7">7-a-Side</option><option value="5">5-a-Side</option><option value="indoor">Indoor</option></select></label>
+      <button class="btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i> بحث</button>
+    </form></div>
+<div class="filter-bar" id="filters">
+  <button class="filter-btn active" data-f="all">الكل</button>
+  <button class="filter-btn" data-f="11">Stadium 11</button>
+  <button class="filter-btn" data-f="7">7-a-Side</button>
+  <button class="filter-btn" data-f="5">5-a-Side</button>
+  <button class="filter-btn" data-f="indoor">Indoor</button>
+  <button class="filter-btn" data-f="available">متاح للحجز</button>
+</div>
+<div class="stadiums-grid" id="grid" aria-live="polite"></div></main>
+<footer>
+  <span class="footer-brand">⚽ 3ALM ELSHABAB</span>
+  <span>© 2026 — All Rights Reserved</span>
+  <span>support@3almelshabab.com</span>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/store.js"></script>
+<script src="js/validators.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/stadium.js"></script>
+</body>
+</html>

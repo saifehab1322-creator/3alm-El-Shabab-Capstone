@@ -1,0 +1,147 @@
+/* ===== إضافات 3ALM ELSHABAB — تعتمد على متغيرات style.css ===== */
+.page-wrap{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:40px}
+.page-wrap.narrow{max-width:560px}
+.page-wrap.mid{max-width:820px}
+.hint{font-size:.76rem;color:var(--text-muted);line-height:1.7}
+.hint.warn{background:rgba(255,214,0,.07);border:1px solid rgba(255,214,0,.2);color:var(--yellow);padding:10px 14px;border-radius:var(--radius-sm)}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px}
+.panel+.panel{margin-top:18px}
+.panel h2,.panel h3{font-family:var(--font-display);font-size:1.1rem;margin-bottom:16px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-grid .full{grid-column:1/-1}
+.form-stack{display:flex;flex-direction:column;gap:6px}
+.form-stack .btn-block{margin-top:10px}
+.form-group.invalid input,.form-group.invalid select,.form-group.invalid textarea{border-color:var(--red)}
+.form-group.valid input,.form-group.valid select,.form-group.valid textarea{border-color:var(--green-border)}
+.field-error{font-size:.74rem;color:var(--red);min-height:1.2em;line-height:1.2}
+.form-msg{border-radius:var(--radius-sm);padding:12px 14px;font-size:.84rem;display:none}
+.form-msg.show{display:block}
+.form-msg.ok{background:var(--green-glow);border:1px solid var(--green-border);color:var(--green)}
+.form-msg.err{background:rgba(255,82,82,.07);border:1px solid rgba(255,82,82,.25);color:var(--red)}
+.form-foot{font-size:.82rem;color:var(--text-muted);text-align:center}
+.form-foot a{color:var(--green)}
+.btn-block{width:100%;padding:14px;font-size:.9rem}
+.btn-danger{background:rgba(255,82,82,.07);border:1px solid rgba(255,82,82,.25);color:var(--red);font-family:var(--font-body);font-weight:700;font-size:.74rem;padding:7px 14px;border-radius:var(--radius-sm);transition:var(--transition)}
+.btn-danger:hover{background:rgba(255,82,82,.16)}
+.btn-danger:disabled{opacity:.4;cursor:not-allowed}
+.btn-small{font-size:.74rem;padding:7px 14px;border-radius:var(--radius-sm)}
+/* sidebar account box */
+.acct-box{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;margin-bottom:14px}
+.acct-avatar{width:36px;height:36px;border-radius:50%;background:var(--green);color:#0a0f0d;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.acct-name{font-size:.82rem;font-weight:700;line-height:1.2}
+.acct-mail{font-size:.64rem;color:var(--text-muted);direction:ltr;text-align:right;overflow:hidden;text-overflow:ellipsis;max-width:140px}
+.nav-item.logout a{color:var(--red)}
+/* search */
+.search-card input,.search-card select{min-width:0;width:100%;font-size:.88rem}
+.results-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.empty-state{text-align:center;padding:48px 20px;background:var(--card);border:1px dashed var(--border);border-radius:var(--radius);color:var(--text-dim)}
+.empty-state i{font-size:2rem;color:var(--text-muted);margin-bottom:12px;display:block}
+.empty-state p{margin-bottom:16px;font-size:.9rem}
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.s-footer .btn-primary{text-decoration:none}
+.s-footer a.btn-primary{padding:10px 16px;font-size:.78rem}
+/* stadium page search */
+.page-search{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:24px 40px 0}
+.page-search .search-card{max-width:none}
+.stadiums-grid .empty-state{grid-column:1/-1}
+/* booking */
+.book-layout{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start}
+.step-title{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-size:1rem;margin-bottom:14px}
+.step-title b{width:26px;height:26px;border-radius:50%;background:var(--green);color:#0a0f0d;display:flex;align-items:center;justify-content:center;font-size:.76rem}
+.book-section{margin-bottom:26px}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px}
+.slot{background:var(--bg3);border:1px solid var(--border);color:var(--text);font-family:var(--font-body);font-size:.82rem;padding:10px 6px;border-radius:var(--radius-sm);transition:var(--transition)}
+.slot:hover:not(:disabled){border-color:var(--green)}
+.slot.selected{background:var(--green);color:#0a0f0d;border-color:var(--green);font-weight:700}
+.slot:disabled{opacity:.35;cursor:not-allowed;text-decoration:line-through}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;font-size:.72rem;color:var(--text-muted)}
+.summary{position:sticky;top:20px}
+.summary dl{display:grid;grid-template-columns:auto 1fr;gap:10px 14px;font-size:.84rem;margin-bottom:18px}
+.summary dt{color:var(--text-muted)}
+.summary dd{text-align:left;color:var(--text)}
+.summary .total{border-top:1px solid var(--border);padding-top:14px;display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px}
+.summary .total b{font-family:var(--font-display);font-size:1.5rem;color:var(--green)}
+.success-box{text-align:center}
+.success-box .big{font-size:3rem;color:var(--green)}
+.success-box code{font-family:var(--font-mono);background:var(--bg3);border:1px solid var(--border);padding:4px 12px;border-radius:6px;color:var(--green)}
+.gate{text-align:center}
+.gate p{margin-bottom:16px;color:var(--text-dim)}
+/* my bookings + admin tables */
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.table-wrap table{min-width:640px}
+.bookings-table .actions{display:flex;gap:6px;flex-wrap:wrap}
+.status.cancelled{background:rgba(255,82,82,.07);border:1px solid rgba(255,82,82,.2);color:var(--red)}
+.status.done{background:var(--bg3);border:1px solid var(--border);color:var(--text-muted)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 4px}
+.tabs .filter-tab{cursor:pointer}
+/* admin */
+.admin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-bottom:24px}
+.kpi{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.kpi .kv{font-family:var(--font-display);font-size:1.8rem;color:var(--green);line-height:1.1}
+.kpi .kl{font-size:.74rem;color:var(--text-muted);margin-top:6px}
+.admin-section{margin-bottom:32px}
+.admin-section>h2{font-family:var(--font-display);font-size:1.15rem;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.admin-nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;position:sticky;top:0;z-index:50;background:var(--bg);padding:10px 0}
+.msg-item{border-bottom:1px solid var(--border-light);padding:14px 0}
+.msg-item:last-child{border:none}
+.msg-item h4{font-size:.9rem;margin-bottom:2px}
+.msg-item small{color:var(--text-muted);font-size:.72rem}
+.msg-item p{margin-top:8px;color:var(--text-dim);font-size:.84rem;line-height:1.7;white-space:pre-wrap}
+.inline-input{background:var(--bg3);border:1px solid var(--border);color:var(--text);border-radius:6px;padding:6px 8px;width:90px;font-family:var(--font-body)}
+/* about */
+.about-hero p{max-width:640px;color:var(--text-dim);line-height:1.9;margin-top:14px}
+.reduce-motion-safe{animation:none}
+:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:900px){
+  .page-wrap{padding:72px 18px 24px}
+  .page-wrap.narrow,.page-wrap.mid{padding-top:72px}
+  .page-search{padding:16px 18px 0}
+  .cards-3{grid-template-columns:1fr 1fr}
+  .stadiums-grid{grid-template-columns:repeat(2,1fr)!important;padding:28px 18px 60px!important}
+  .page-hero{padding:80px 18px 32px!important;flex-direction:column;align-items:flex-start!important;gap:14px}
+  .filter-bar{padding:18px!important}
+  .book-layout{grid-template-columns:1fr}
+  .summary{position:static}
+}
+@media (max-width:600px){
+  .cards-3,.stadiums-grid{grid-template-columns:1fr!important}
+  .form-grid{grid-template-columns:1fr}
+  .panel{padding:20px}
+}
+/* توحيد نافذة الـ modal: ملف الصفحة الأصلي يخفيها بـ display:none ويفتحها بـ .active، بينما باقي الموقع يستخدم .open */
+.modal-overlay{z-index:2000}
+.modal-overlay.open,.modal-overlay.active{display:flex;opacity:1;pointer-events:all}
+/* العناوين العربية تحتاج ارتفاع سطر أكبر من القيمة الأصلية (0.9) المصممة للإنجليزية */
+.hero-content h1,.page-hero h1{line-height:1.3}
+.hero-content h1{font-size:clamp(2.6rem,6vw,4.6rem)}
+.s-footer{flex-wrap:wrap;gap:10px}
+.hero-content .search-card{max-width:760px}
+@media (max-width:900px){.sidebar{padding-top:72px}}
+/* ===== أصحاب الملاعب + أكواد التفعيل ===== */
+.code-input{font-family:var(--font-mono);letter-spacing:2px;text-transform:uppercase}
+.code-reveal{margin-top:18px;background:var(--green-glow);border:1px solid var(--green-border);border-radius:var(--radius);padding:18px}
+.code-big{display:block;font-family:var(--font-mono);font-size:1.4rem;color:var(--green);letter-spacing:3px;direction:ltr;text-align:center;padding:12px;background:var(--bg3);border-radius:var(--radius-sm);margin:10px 0;user-select:all;word-break:break-all}
+.mono{font-family:var(--font-mono);direction:ltr;display:inline-block}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px;margin-bottom:14px}
+.thumb{position:relative;border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden;aspect-ratio:4/3;background:var(--bg3)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb button{position:absolute;top:6px;inset-inline-end:6px;background:rgba(0,0,0,.7);color:#fff;border:0;border-radius:50%;width:26px;height:26px;cursor:pointer}
+.checks{display:flex;gap:22px;flex-wrap:wrap}
+.checks label{display:flex;align-items:center;gap:8px;font-size:.86rem;cursor:pointer}
+.checks input{width:auto}
+.banner{padding:12px 14px;border-radius:var(--radius-sm);font-size:.84rem;margin-bottom:16px;background:rgba(255,214,0,.07);border:1px solid rgba(255,214,0,.2);color:var(--yellow)}
+.slot.booked{opacity:.55;text-decoration:none;border-style:dashed;cursor:default}
+.slots.wide{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+/* عرض مواعيد المالك (للقراءة فقط): المتاح أخضر، المحجوز أحمر بدون خط */
+.slots.wide .slot{text-decoration:none;opacity:1;cursor:default}
+.slots.wide .slot.free{border-color:var(--green-border);color:var(--green)}
+.slots.wide .slot.booked{border-color:rgba(255,82,82,.45);color:var(--red);background:rgba(255,82,82,.06)}
+/* معرض صور الملعب في نافذة التفاصيل */
+.sm-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:50%;border:0;background:rgba(0,0,0,.55);color:#fff;font-size:1.6rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:var(--transition)}
+.sm-nav:hover{background:rgba(0,230,118,.85);color:#0a0f0d}
+.sm-nav[hidden],.sm-count[hidden]{display:none}
+.sm-nav.prev{inset-inline-start:12px}.sm-nav.next{inset-inline-end:12px}
+html[dir="rtl"] .sm-nav span{display:inline-block;transform:scaleX(-1)}
+.sm-count{position:absolute;bottom:12px;inset-inline-end:14px;z-index:3;background:rgba(0,0,0,.6);color:#fff;font-size:.72rem;padding:3px 10px;border-radius:20px;font-family:var(--font-mono)}
+.slots.wide .slot.blocked{border-color:var(--border);color:var(--text-muted);background:repeating-linear-gradient(45deg,transparent 0 6px,rgba(255,255,255,.04) 6px 12px)}

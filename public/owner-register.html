@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل صاحب ملعب — 3ALM ELSHABAB</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/stadium-page.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/ltr.css">
+</head>
+<body data-page="owner-register">
+<main>
+<div class="page-wrap mid">
+  <div class="panel">
+    <p class="section-label">Stadium Owners</p><h1 class="section-title" style="margin-bottom:10px;">تسجيل صاحب ملعب</h1>
+    <p class="hint" style="margin-bottom:20px;">التسجيل متاح فقط لأصحاب الملاعب الحاصلين على كود تفعيل من إدارة المنصة. ليس لديك كود؟ <a href="contact.html" style="color:var(--green)">تواصل معنا</a> وسنراجع بياناتك ونرسل لك الكود.</p>
+    <form id="ownerRegForm" class="form-grid" novalidate autocomplete="off">
+      <div class="form-group"><label for="oname">الاسم الكامل لصاحب الملعب</label><input id="oname" name="name" autocomplete="name"></div>
+      <div class="form-group"><label for="ophone">رقم الهاتف</label><input id="ophone" name="phone" type="tel" dir="ltr" placeholder="01012345678"></div>
+      <div class="form-group full"><label for="oemail">البريد الإلكتروني</label><input id="oemail" name="email" type="email" dir="ltr" placeholder="name@example.com"></div>
+      <div class="form-group"><label for="opass">كلمة المرور</label><input id="opass" name="password" type="password" dir="ltr" autocomplete="new-password"><span class="hint">8 أحرف على الأقل، وبها حرف كبير وحرف صغير ورقم.</span></div>
+      <div class="form-group"><label for="opass2">تأكيد كلمة المرور</label><input id="opass2" name="confirm" type="password" dir="ltr" autocomplete="new-password"></div>
+      <div class="form-group"><label for="ostadium">اسم الملعب</label><input id="ostadium" name="stadiumName"></div>
+      <div class="form-group"><label for="oaddr">عنوان الملعب وموقعه</label><input id="oaddr" name="address" placeholder="سوهاج، شارع ..."></div>
+      <div class="form-group full"><label for="ocode">كود تفعيل صاحب الملعب (Owner Activation Code)</label><input id="ocode" name="code" dir="ltr" class="code-input" placeholder="OWN-XXXX-XXXX-XXXX" spellcheck="false" autocapitalize="characters"></div>
+      <div class="full"><button class="btn-primary btn-block" type="submit">إنشاء حساب</button></div>
+      <p class="form-foot full">لديك حساب بالفعل؟ <a href="owner-login.html">دخول أصحاب الملاعب</a></p>
+    </form>
+  </div>
+</div></main>
+<footer>
+  <span class="footer-brand">⚽ 3ALM ELSHABAB</span>
+  <span>© 2026 — All Rights Reserved</span>
+  <span>support@3almelshabab.com</span>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/store.js"></script>
+<script src="js/validators.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/owner-auth.js"></script>
+</body>
+</html>

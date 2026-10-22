@@ -1,0 +1,27 @@
+/* وضع الإنجليزية (LTR): قلب كل ما صُمّم لـ RTL في style.css */
+html[dir="ltr"] body{padding-right:0;padding-left:var(--sidebar-w)}
+html[dir="ltr"] .sidebar{right:auto;left:0;border-left:0;border-right:1px solid var(--border)}
+html[dir="ltr"] .hero-orb{right:auto;left:-60px}
+html[dir="ltr"] .stat-item{border-right:0;border-left:1px solid var(--border)}
+html[dir="ltr"] .stat-item:last-child{border-left:0}
+html[dir="ltr"] .step-num{left:auto;right:18px}
+html[dir="ltr"] .bookings-table th{text-align:left}
+html[dir="ltr"] .s-rating-badge{left:auto;right:12px}
+html[dir="ltr"] .s-avail-badge{right:auto;left:12px}
+html[dir="ltr"] .sm-stat{border-left:0;border-right:1px solid var(--border)}
+html[dir="ltr"] .sm-stat:last-child{border-right:0}
+html[dir="ltr"] .sm-close-btn{left:auto;right:14px}
+html[dir="ltr"] .theme-toggle-switch::after{right:auto;left:3px}
+html[dir="ltr"] body.light-mode .theme-toggle-switch::after{left:auto;right:3px}
+html[dir="ltr"] .acct-mail{text-align:left}
+html[dir="ltr"] .summary dd{text-align:right}
+html[dir="ltr"] .fa-arrow-left::before{content:"\f061"}
+html[dir="ltr"] .sm-location i,html[dir="ltr"] .sm-hero+* .sm-location i{margin-left:0!important;margin-right:5px}
+html[dir="ltr"] .hero-sub,html[dir="ltr"] .page-hero p{text-align:left}
+@media (max-width:900px){
+  html[dir="ltr"] body{padding-left:0}
+  html[dir="ltr"] .sidebar{right:auto;left:-100%;transition:left .3s;box-shadow:8px 0 32px rgba(0,0,0,.5)}
+  html[dir="ltr"] .sidebar.open{left:0}
+  html[dir="ltr"] .mobile-menu-btn{right:auto;left:14px}
+}
+.lang-btn{width:100%;margin-bottom:8px;cursor:pointer}
